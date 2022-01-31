@@ -19,17 +19,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 # Inherit from a3y17lte device
-$(call inherit-product, device/samsung/j6lte/device.mk)
+$(call inherit-product, device/samsung/a6lte/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := j6lte
-PRODUCT_NAME := lineage_j6lte
+PRODUCT_DEVICE := a6lte
+PRODUCT_NAME := lineage_a6lte
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-J600F
+PRODUCT_MODEL := SM-A600G
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
@@ -38,8 +38,8 @@ TARGET_BOOT_ANIMATION_RES := 720
 TARGET_GAPPS_ARCH := arm64
 
 # Build info
-BUILD_FINGERPRINT :="samsung/beyond2ltexx/beyond2:10/QP1A.190711.020/G975FXXU3BSKO:user/release-keys"
+BUILD_FINGERPRINT :="samsung/beyond2ltexx/beyond2:10/QP:1A.190711.020/G975FXXU3BSKO:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="j6lte" \
-    PRODUCT_NAME="lineage_j6lte"
+    TARGET_DEVICE="a6lte" \
+    PRODUCT_NAME="lineage_a6lte"
 
